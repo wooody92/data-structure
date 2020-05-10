@@ -68,4 +68,13 @@ public class Chapter1_2 {
             return;
         }
     }
+
+    public void countDigit(int a) {
+        int n = 0;
+        while (a > 0) {
+            a /= 10;
+            n++;
+        }
+        System.out.println("result : " + n);
+    }
 }
