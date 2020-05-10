@@ -2,7 +2,7 @@ package chapter1;
 
 import java.util.Scanner;
 
-public class Chapter1 {
+public class Chapter1_1 {
     public void getMaxValue() {
         Scanner str = new Scanner(System.in);
 
