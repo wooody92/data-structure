@@ -22,4 +22,38 @@ public class Chapter1 {
         }
         System.out.println("Max value :" + max);
     }
+
+    public int getMinValue(int a, int b, int c) {
+        int min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        return min;
+    }
+
+    public int getMedianValue(int a, int b, int c) {
+        if (a >= b) {
+            if (b >= c) {
+                return b;
+            }
+            else if (a <= c) {
+                return a;
+            }
+            else {
+                return c;
+            }
+        }
+        else if (a > c) {
+            return a;
+        }
+        else if (b > c) {
+            return c;
+        }
+        else {
+            return b;
+        }
+    }
 }
