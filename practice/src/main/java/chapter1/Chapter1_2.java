@@ -77,4 +77,78 @@ public class Chapter1_2 {
         }
         System.out.println("result : " + n);
     }
+
+    public void triangle(int n) {
+        // #1
+        System.out.println("#1");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // #2
+        System.out.println("#2");
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // #3
+        System.out.println("#3");
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // #4
+        System.out.println("#4");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // #5
+        System.out.println("#5");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // #6
+        System.out.println("#6");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print(i);
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
 }
